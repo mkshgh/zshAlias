@@ -1,0 +1,9 @@
+#windows aliases
+alias back="cd .."
+alias doubleback="cd ..;cd .."
+alias home="$HOME"
+
+# git aliases
+alias ginit="git init ."
+alias gadd="git add ."
+alias gc="git commit -m 'Initial Commit'"

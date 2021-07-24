@@ -1,0 +1,41 @@
+# Create a directory and go to the direcotry
+function mdr {
+    mkdir $1 && cd $1
+}
+
+## Function to shorten my brew use even more
+function bi {
+	brew cask install $1
+}
+
+function _r {
+    $1
+    $HOME/documents/programming/fun/commands_capture/
+    pp $1
+    home
+}
+
+#function to make and run in one go.
+function mun {
+    make $1
+    ./$1
+    rm $1
+}
+
+function quotes {
+    echo "We are therefore I am."
+    
+}
+
+function gedit {
+    git init
+}
+
+function gumit {
+	git add .
+	git commit -m $1   
+}
+
+function gull {
+    git pull origin $1
+}
