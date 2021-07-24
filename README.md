@@ -4,7 +4,7 @@
     vim ~/.zshrc
     
     #Copy the folder to the location
-    cd linux $HOME/linux/alias/.alias
+    mv linux $HOME/linux/alias/.alias
     
     # Add to the file
     source $HOME/linux/alias/.alias
