@@ -1,9 +1,18 @@
-#windows aliases
+# windows aliases
 alias back="cd .."
 alias doubleback="cd ..;cd .."
 alias home="$HOME"
+alias apt-get='sudo apt-get'
 
 # git aliases
 alias ginit="git init ."
 alias gadd="git add ."
-alias gc="git commit -m 'Initial Commit'"
+alias gc="git commit -m"
+alias gp='git push origin $(current_branch)'
+
+# zsh edit
+alias zalias='sudo vim ~/linux/alias/.alias'
+alias zfunc="sudo vim ~/linux/alias/.functions"
+alias zrefresh=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+# file operations
+alias ddel='sudo rm -rf'
