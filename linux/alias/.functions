@@ -5,7 +5,7 @@ function mdr {
 
 ## Function to shorten my brew use even more
 function bi {
-	brew cask install $1
+        brew cask install $1
 }
 
 function _r {
@@ -24,7 +24,7 @@ function mun {
 
 function quotes {
     echo "We are therefore I am."
-    
+
 }
 
 function gedit {
@@ -32,10 +32,10 @@ function gedit {
 }
 
 function gumit {
-	git add .
-	git commit -m $1   
+        git add .
+        git commit -m $1
 }
 
 function gull {
-    git pull origin $1
+    git pull origin $2
 }
