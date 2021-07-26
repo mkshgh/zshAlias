@@ -3,6 +3,7 @@ alias back="cd .."
 alias doubleback="cd ..;cd .."
 alias home="$HOME"
 alias apt-get='sudo apt-get'
+alias cls='clear'
 
 # git aliases
 alias ginit="git init ."
@@ -11,8 +12,12 @@ alias gc="git commit -m"
 alias gp='git push origin $(current_branch)'
 
 # zsh edit
-alias zalias='sudo vim ~/linux/alias/.alias'
-alias zfunc="sudo vim ~/linux/alias/.functions"
+alias zalias='sudo vim ~/zshAlias/linux/alias/.alias'
+alias zfunc="sudo vim ~/zshAlias/linux/alias/.functions"
 alias zrefresh=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 # file operations
 alias ddel='sudo rm -rf'
+
+#programming
+alias python='python3'
+alias pip='pip3'
