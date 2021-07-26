@@ -9,7 +9,7 @@
     vim ~/.zshrc
     
     #Copy the folder to the location
-    mv linux $HOME/linux/alias/.alias
+    mv linux $HOME/zshAlias/linux/alias/.alias
     
     # Add to the file
     source $HOME/zshAlias/linux/alias/.alias
