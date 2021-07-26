@@ -15,3 +15,9 @@
     source $HOME/zshAlias/linux/alias/.alias
     source $HOME/zshAlias/linux/alias/.functions
     
+    # Open zsh by default
+    vim ~/.bashrc
+    # Add to the top of the file
+    if test -t 1; then
+    exec zsh
+    fi
