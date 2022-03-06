@@ -1,0 +1,55 @@
+alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+# easier to read disk
+alias df='df -h'     # human-readable sizes
+alias free='free -m' # show sizes in MB
+# get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4 | head -5'
+# get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3 | head -5'
+# systemds
+alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
+
+
+# git aliases
+alias ginit="git init ."
+alias gadd="git add ."
+alias gc="git commit -m"
+alias gp='git push origin $(current_branch)'
+
+# zsh edit
+alias zalias="sudo vim $HOME/.config/zsh/zsh-aliases"
+alias zfunc="sudo vim $HOME/.config/zsh/zsh-functions"
+alias zrefresh=". $HOME/.config/.zshrc && echo 'ZSH config reloaded from $HOME/.config/.zshrc'"
+# file operations
+alias ddel='sudo rm -rf'
+
+#programming
+alias python='python3'
+alias pip='pip3'
+
+case "$(uname -s)" in
+
+Darwin)
+	# echo 'Mac OS X'
+	alias ls='ls -G'
+	;;
+
+Linux)
+	alias ls='ls --color=auto'
+	;;
+
+CYGWIN* | MINGW32* | MSYS* | MINGW*)
+	# echo 'MS Windows'
+	alias back="cd .."
+	alias doubleback="cd ..;cd .."
+	alias home="$HOME"
+	alias cls='clear'
+	;;
+*)
+	# echo 'Other OS'
+	;;
+esac
